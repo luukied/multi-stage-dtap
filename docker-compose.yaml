@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  development-python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    volumes:
+      - ./:/app
